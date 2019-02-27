@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
+             android:orientation="vertical"
              tools:context=".app.ui.signup.SignUpFragment">
-    <androidx.appcompat.widget.AppCompatEditText
+        <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fullName"
+                android:hint="@string/full_name"/>
+        <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:hint="@string/email"/>
+        <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password"
+                android:hint="@string/password"/>
+        <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password2"
+                android:hint="@string/passwod2"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:id="@+id/SignUpUsername"
-            android:layout_height="wrap_content"/>
-    <androidx.appcompat.widget.AppCompatEditText
-            android:layout_width="match_parent"
-            android:id="@+id/SignUpPassword"
-                android:layout_height="wrap_content"/>
-    <androidx.appcompat.widget.AppCompatAutoCompleteTextView android:layout_width="wrap_content"
-                                                             android:layout_height="wrap_content"
-    android:text="hellllooo"/>
+            android:layout_height="wrap_content">
     <Button
-            android:text="Sign Up"
+            android:text="@string/signup"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/signUp"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUp"
             android:layout_weight="1"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
-</LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

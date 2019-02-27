@@ -77,12 +77,9 @@ class LoginFragment : Fragment() {
         var jsonObjectRequest =
             object : JsonObjectRequest(Request.Method.POST, "https://restapis.xyz/around-me/v1/user/login",
                 jsonobject, object : Response.Listener<JSONObject> {
-                    override fun onResponse(response: JSONObject?) {
-                    }
-                }, object : Response.ErrorListener {
-                    override fun onErrorResponse(error: VolleyError?) {
-                    }
-                }) {
+                    override fun onResponse(response: JSONObject?) {}}
+                , object : Response.ErrorListener {
+                    override fun onErrorResponse(error: VolleyError?) {} }) {
                 override fun parseNetworkResponse(response: NetworkResponse?): Response<JSONObject> {
                     println("started")
                     if (response!!.statusCode == 200) {

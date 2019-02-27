@@ -10,4 +10,8 @@
     <string name="error">Error</string>
     <string name="invalid_user_or_pass">Invalid username or password</string>
     <string name="ok">Ok</string>
+    <string name="full_name">Full Name </string>
+    <string name="email">Email</string>
+    <string name="passwod2">ReEnter your password </string>
+    <string name="signup">Sign Up</string>
 </resources>
